@@ -18,21 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pvn-PW-xnf">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvn-PW-xnf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Demo App" id="C7o-1f-YI3"/>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-RF-tdV" userLabel="MapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-RF-tdV" userLabel="MapView" customClass="MFMapView">
                                 <rect key="frame" x="0.0" y="44" width="375" height="326"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-c1-pie" userLabel="CommandView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-c1-pie" userLabel="CommandView">
                                 <rect key="frame" x="0.0" y="367" width="375" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuN-Sy-Qi3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -63,9 +60,24 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BLz-4s-lIj"/>
+                                    <constraint firstAttribute="width" constant="375" id="U3R-fO-NyT"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AQ4-RF-tdV" secondAttribute="bottom" constant="253" id="0Z0-wi-1j6"/>
+                            <constraint firstItem="pvn-PW-xnf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FMG-TU-eQ5"/>
+                            <constraint firstItem="zZa-c1-pie" firstAttribute="trailing" secondItem="AQ4-RF-tdV" secondAttribute="trailing" id="HWC-2i-qa8"/>
+                            <constraint firstAttribute="bottom" secondItem="zZa-c1-pie" secondAttribute="bottom" id="SNZ-Cu-mBK"/>
+                            <constraint firstItem="zZa-c1-pie" firstAttribute="leading" secondItem="pvn-PW-xnf" secondAttribute="leading" id="Uhf-tN-oBi"/>
+                            <constraint firstItem="zZa-c1-pie" firstAttribute="trailing" secondItem="pvn-PW-xnf" secondAttribute="trailing" id="XXr-3e-Kn3"/>
+                            <constraint firstItem="zZa-c1-pie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fCL-vp-zN7"/>
+                            <constraint firstItem="pvn-PW-xnf" firstAttribute="bottom" secondItem="AQ4-RF-tdV" secondAttribute="top" id="p4q-ub-D6t"/>
+                            <constraint firstItem="zZa-c1-pie" firstAttribute="leading" secondItem="AQ4-RF-tdV" secondAttribute="leading" id="qRv-Px-BPZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>

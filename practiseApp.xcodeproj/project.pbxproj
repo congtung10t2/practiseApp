@@ -18,6 +18,7 @@
 		042EA1532265924400D5C5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042EA1512265924400D5C5B9 /* LaunchScreen.storyboard */; };
 		042EA15E2265924400D5C5B9 /* practiseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EA15D2265924400D5C5B9 /* practiseAppTests.swift */; };
 		042EA1692265924400D5C5B9 /* practiseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EA1682265924400D5C5B9 /* practiseAppUITests.swift */; };
+		046B8DFA2266C7D4008A4F95 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8DF92266C7D4008A4F95 /* CallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		042EA1642265924400D5C5B9 /* practiseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042EA1682265924400D5C5B9 /* practiseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiseAppUITests.swift; sourceTree = "<group>"; };
 		042EA16A2265924400D5C5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B8DF92266C7D4008A4F95 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				0414283F2265BB1400290E23 /* RateViews.swift */,
 				041428412265CFE100290E23 /* DetailView.xib */,
 				041428432265D03F00290E23 /* DetailView.swift */,
+				046B8DF92266C7D4008A4F95 /* CallView.swift */,
 			);
 			path = practiseApp;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				041428402265BB1400290E23 /* RateViews.swift in Sources */,
 				041428442265D03F00290E23 /* DetailView.swift in Sources */,
 				042EA14B2265924300D5C5B9 /* ViewController.swift in Sources */,
+				046B8DFA2266C7D4008A4F95 /* CallView.swift in Sources */,
 				042EA1492265924300D5C5B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
